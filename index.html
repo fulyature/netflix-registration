@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <h3 id="description">
+          Thank you for signing up to Netflix.Tell me more about yourself.
+        </h3>
+      </header>
+      <section id="servey-form-container">
+        <form action="result.html" method="get">
+          <div class="input-box">
+            <!-- <label>Name<input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              /></label> -->
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label>
+            <br />
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Age"
+              max="120"
+              min="12"
+            />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="input-box">
+            <label for="">Content type</label>
+            <br />
+            <select name="content" id="dropdown">
+              <option value="series">Series</option>
+              <option value="movies">Movies</option>
+              <option value="tv-shows">TV shows</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label>Content Type </label><br />
+
+            <input type="checkbox" name="movie1" id="first-check" />
+            <label for="first-check">Comedy</label>
+            <br />
+            <input type="checkbox" name="movie2" id="second-check" />
+            <label for="second-check">Action</label>
+            <br />
+
+            <input type="checkbox" name="movie3" id="third-check" />
+            <label for="third-check">Romance</label>
+          </div>
+
+          <div class="input-box">
+            <label for="">Gender</label>
+            <br />
+            <input
+              type="radio"
+              name="gender"
+              id="first-gender"
+              value="Female"
+            />
+            <label for="first-radio">Female</label>
+            <br />
+            <input type="radio" name="gender" id="second-gender" value="Male" />
+            <label for="second-radio">Male</label>
+            <br />
+            <input type="radio" name="gender" id="third-gender" value="Other" />
+            <label for="third-radio">Other</label>
+          </div>
+
+          <div class="input-box">
+            <label for="feedback">Feedback</label>
+            <br />
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+              placeholder="Any comment"
+            ></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button id="form-button">Send</button>
+            <br />
+            <div class="input-box>" id="radio"></div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
